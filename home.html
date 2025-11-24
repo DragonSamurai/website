@@ -1,33 +1,72 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Website</title>
+    <title>欢迎来到 Dragon Samurai 餐厅</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Simple Page</h1>
+    <header class="header">
+        <div class="nav-left">
+            <span class="logo">Blanquette</span>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#" class="active">HOME</a></li>
+                <li><a href="#">PAGES</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">SHOP</a></li>
+            </ul>
+            <span class="nav-separator"><i class="fas fa-star"></i></span>
+        </nav>
+        <div class="nav-right">
+            <span>+44 66 789 011</span>
+        </div>
     </header>
-    
-    <main>
-        <section>
-            <h2>About This Site</h2>
-            <p>
-                This is a basic HTML document. It uses the essential structural tags like 
-                <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code>, along with semantic tags like 
-                <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, and <code>&lt;section&gt;</code>.
-                You can expand this structure by adding CSS for styling and JavaScript for interactivity.
-            </p>
-            <p>
-                Visit a helpful resource: 
-                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN HTML Documentation</a>
-            </p>
-        </section>
+
+    <main class="hero-section">
+        <div class="content-container">
+            <div class="hero-text-area">
+                <span class="ambient-text">AMBIENT</span>
+                <h1 class="headline">FINE DINING</h1>
+                <p class="description-text">
+                    Tincidunt id aliquet risus feugiat in ante metus dictum vulputate 
+                    mi sit amet mauris commodo quis. Tortor aliquam nulla facilisi 
+                    cras fermentum odio.
+                </p>
+                <div class="arrow left-arrow"><i class="fas fa-arrow-left"></i></div>
+            </div>
+            
+            <div class="hero-image-area">
+                <div class="arrow right-arrow"><i class="fas fa-arrow-right"></i></div>
+            </div>
+        </div>
     </main>
     
-    <footer>
-        <p>&copy; 2025 Simple Web Page</p>
-    </footer>
+    <div class="booking-bar">
+        <div class="booking-left">
+            <p>BOOK A TABLE</p>
+            <p class="powered-by">*powered by OpenTable</p>
+        </div>
+        <form class="booking-form">
+            <select name="people">
+                <option value="1">1 Person</option>
+                <option value="2">2 People</option>
+                <option value="4">4 People</option>
+            </select>
+            
+            <input type="text" name="date" value="04.15.2022" class="date-input">
+            
+            <select name="time">
+                <option value="11:00">11:00 am</option>
+                <option value="12:00">12:00 pm</option>
+            </select>
+            
+            <button type="submit" class="submit-button">SUBMIT</button>
+        </form>
+    </div>
+
 </body>
 </html>
